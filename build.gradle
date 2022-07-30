@@ -134,6 +134,7 @@ subprojects { p ->
         def properties = [
                 accessWidener: rootProject.accessWidener,
                 id: rootProject.mod_id,
+                displayName: rootProject.display_name,
                 version: rootProject.mod_version,
                 license: rootProject.license
         ]

@@ -6,7 +6,7 @@ license = "${license}"
 [[mods]]
 modId = "${id}"
 version = "${version}"
-displayName = "Example Mod"
+displayName = "${displayName}"
 authors = "Me!"
 description = '''
 This is an example description! Tell everyone what your mod is about!
