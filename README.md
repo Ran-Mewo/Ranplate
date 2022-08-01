@@ -1,5 +1,5 @@
 # Ranplate
-A template repo for my mods which is multi-loader & multi-versioned
+A template repo for my minecraft mods which is multi-loader & multi-versioned
 
 Current Preprocessor System:
 - MC_`<version>`
