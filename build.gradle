@@ -4,6 +4,8 @@ plugins {
     id "io.github.pacifistmc.forgix" version "1.2.2"
 }
 
+// The accesswidener is set as <modid>.accesswidener
+
 // These are the access wideners depending on the minecraft version
 def mcVersionToAccessWidenerVersion = [
         "1.16.5": "1_19",
