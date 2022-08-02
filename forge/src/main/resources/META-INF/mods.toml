@@ -19,3 +19,10 @@ mandatory = true
 versionRange = "[0.0.0,)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "architectury"
+mandatory = true
+versionRange = "[0.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
