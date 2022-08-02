@@ -19,5 +19,6 @@ Also could look in this [class](https://github.com/Ran-helo/Ranplate/blob/master
 This repo contains [MixinExtras](https://github.com/LlamaLad7/MixinExtras) so remember to [check](https://github.com/LlamaLad7/MixinExtras/wiki) that out!\
 It also contains a lot of optimization mods to run the development environment a bit better.\
 And also contains [Forgix](https://github.com/PacifistMC/Forgix) which basically merges the mod-loaders into one jar!
+
 ---
 When adding more versions, remember to edit the `.github/workflows/build.yml` file and make sure the merged jars doesn't overwrite each other!
