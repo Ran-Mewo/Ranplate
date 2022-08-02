@@ -2,15 +2,17 @@ package net.examplemod;
 
 import com.google.common.base.Suppliers;
 #if POST_MC_1_16_5
+import dev.architectury.platform.Platform;
 import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registries;
 import dev.architectury.registry.registries.RegistrySupplier;
 #else
+import me.shedaniel.architectury.platform.Platform;
 import me.shedaniel.architectury.registry.CreativeTabs;
-import me.shedaniel.architectury.registry.registries.DeferredRegister;
-import me.shedaniel.architectury.registry.registries.Registries;
-import me.shedaniel.architectury.registry.registries.RegistrySupplier;
+import me.shedaniel.architectury.registry.DeferredRegister;
+import me.shedaniel.architectury.registry.Registries;
+import me.shedaniel.architectury.registry.RegistrySupplier;
 #endif
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;

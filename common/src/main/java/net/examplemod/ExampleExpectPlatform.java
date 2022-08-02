@@ -1,7 +1,11 @@
 package net.examplemod;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
+#if POST_MC_1_16_5
 import dev.architectury.platform.Platform;
+#else
+import me.shedaniel.architectury.platform.Platform;
+#endif
 
 import java.nio.file.Path;
 
