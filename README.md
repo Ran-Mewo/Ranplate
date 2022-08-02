@@ -9,7 +9,7 @@ Current Preprocessor System:
 - POST_CURRENT_MC_`<version>`
    - so `POST_CURRENT_MC_1_19` would mean if the current version is after 1.19 or is 1.19
 - PRE_MC_`<version>`
-   - so `PRE_1_19` would mean if the version is before 1.19
+   - so `PRE_MC_1_19` would mean if the version is before 1.19
 - PRE_CURRENT_MC_`<version>`
    - so `PRE_CURRENT_MC_1_19` would mean if the current version is before 1.19 or is 1.19
 
