@@ -21,4 +21,5 @@ It also contains a lot of optimization mods to run the development environment a
 And also contains [Forgix](https://github.com/PacifistMC/Forgix) which basically merges the mod-loaders into one jar!
 
 ---
-When adding more versions, remember to edit the `.github/workflows/build.yml` file and make sure the merged jars doesn't overwrite each other!
+When adding more versions, remember to edit the `.github/workflows/build.yml` file and make sure the merged jars doesn't overwrite each other!\
+And do note that if you're going to use Architectury API then `dev.architectury` is `me.shedaniel.architectury` in 1.16.5 and below.
