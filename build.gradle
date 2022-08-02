@@ -19,7 +19,7 @@ makeAccessWidener()
 
 forgix {
     group = rootProject.maven_group
-    mergedJarName = "${rootProject.mod_id}-${rootProject.mod_version}.jar"
+    mergedJarName = "${rootProject.mod_id}-${rootProject.mod_version}-${rootProject.minecraft_version}.jar"
 }
 
 architectury {
