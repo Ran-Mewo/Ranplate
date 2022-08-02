@@ -17,4 +17,5 @@ Remember to install the [Manifold](https://plugins.jetbrains.com/plugin/10057-ma
 Also could look in this [class](https://github.com/Ran-helo/Ranplate/blob/master/common/src/main/java/net/examplemod/ExampleMod.java) if you need an example of how to use it!
 
 This repo contains [MixinExtras](https://github.com/LlamaLad7/MixinExtras) so remember to [check](https://github.com/LlamaLad7/MixinExtras/wiki) that out!\
-It also contains a lot of optimization mods to run the development environment a bit better.
+It also contains a lot of optimization mods to run the development environment a bit better.\
+And also contains [Forgix](https://github.com/PacifistMC/Forgix) which basically merges the mod-loaders into one jar!

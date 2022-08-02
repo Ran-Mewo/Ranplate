@@ -34,12 +34,22 @@ public class ExampleMod {
         System.out.println("Is post 1.16.5 and is 1.19");
         #elif POST_CURRENT_MC_1_16_5
         System.out.println("Is 1.16.5 or post 1.16.5");
-        #elif POST_MC_1_16_5
+        #endif
+
+        #if POST_MC_1_16_5
         System.out.println("Is post 1.16.5");
         #elif PRE_MC_1_18_2
         System.out.println("Is pre 1.18.2");
-        #elif PRE_CURRENT_MC_1_18_2
+        #endif
+
+        #if PRE_CURRENT_MC_1_18_2
         System.out.println("Is 1.18.2 or pre 1.18.2");
         #endif
+
+        if (Platform.isFabric()) {
+            System.out.println("Is Fabric");
+        } else if (Platform.isForge()) {
+            System.out.println("Is Forge");
+        }
     }
 }
