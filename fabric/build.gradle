@@ -31,7 +31,7 @@ dependencies {
         modImplementation "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
     }
 
-    addJar "maven.modrinth:qwikse:1.0.0" // https://modrinth.com/mod/qwikse
+    include "maven.modrinth:qwikse:1.0.0" // https://modrinth.com/mod/qwikse
 
     modImplementation("com.terraformersmc:modmenu:${rootProject.modmenu_version}")
 
