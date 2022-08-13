@@ -117,10 +117,6 @@ subprojects { p ->
             if (rootProject.hasProperty("smoothboot_forge")) {
                 modImplementation "curse.maven:smooth-boot-reloaded-633412:${rootProject.smoothboot_forge}"
             }
-            // Lazy DFU is broken on forge
-//            if (rootProject.hasProperty("lazydfu_forge")) {
-//                modImplementation "curse.maven:lazy-dfu-forge-460819:${rootProject.lazydfu_forge}"
-//            }
             if (rootProject.hasProperty("starlight_forge")) {
                 modImplementation "curse.maven:starlight-forge-526854:${rootProject.starlight_forge}"
             }

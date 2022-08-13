@@ -24,6 +24,7 @@ dependencies {
         addJar "dev.architectury:architectury-forge:${rootProject.architectury_version}"
     }
 
+    common "com.github.LlamaLad7:MixinExtras:${rootProject.mixin_extras}"
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 }

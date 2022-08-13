@@ -1,6 +1,5 @@
 package net.examplemod.forge;
 
-import com.llamalad7.mixinextras.MixinExtrasBootstrap;
 #if POST_MC_1_16_5
 import dev.architectury.platform.forge.EventBuses;
 #else
@@ -13,7 +12,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(ExampleMod.MOD_ID)
 public class ExampleModForge {
     public ExampleModForge() {
-        MixinExtrasBootstrap.init();
+        PreLaunchSetup.onPreLaunch();
 
         EventBuses.registerModEventBus(ExampleMod.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
         ExampleMod.init();
