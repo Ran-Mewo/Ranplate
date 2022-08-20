@@ -17,6 +17,7 @@ configurations {
 
 repositories {
     maven { url "https://maven.terraformersmc.com/" }
+    maven { url "https://maven.shedaniel.me/" }
 }
 
 dependencies {
@@ -33,7 +34,10 @@ dependencies {
 
     include "maven.modrinth:qwikse:1.0.0" // https://modrinth.com/mod/qwikse
 
-    modImplementation("com.terraformersmc:modmenu:${rootProject.modmenu_version}")
+    modImplementation "com.terraformersmc:modmenu:${rootProject.modmenu_version}"
+    modImplementation("me.shedaniel.cloth:cloth-config:${rootProject.cloth_config_version}") {
+        exclude(group: "net.fabricmc.fabric-api")
+    }
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }

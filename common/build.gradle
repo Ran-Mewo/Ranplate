@@ -2,6 +2,10 @@ architectury {
     common(rootProject.enabled_platforms.split(", "))
 }
 
+repositories {
+    maven { url "https://maven.shedaniel.me/" }
+}
+
 dependencies {
     // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
     // Do NOT use other classes from fabric loader
@@ -12,6 +16,8 @@ dependencies {
     } else {
         modImplementation "dev.architectury:architectury:${rootProject.architectury_version}"
     }
+
+    modImplementation "me.shedaniel.cloth:cloth-config:${rootProject.cloth_config_version}"
 }
 
 publishing {
