@@ -35,7 +35,7 @@ dependencies {
     include "maven.modrinth:qwikse:1.0.0" // https://modrinth.com/mod/qwikse
 
     modImplementation "com.terraformersmc:modmenu:${rootProject.modmenu_version}"
-    modImplementation("me.shedaniel.cloth:cloth-config:${rootProject.cloth_config_version}") {
+    modImplementation("me.shedaniel.cloth:cloth-config-fabric:${rootProject.cloth_config_version}") {
         exclude(group: "net.fabricmc.fabric-api")
     }
 
