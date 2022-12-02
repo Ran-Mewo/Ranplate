@@ -3,15 +3,15 @@ A template repo for my minecraft mods which is multi-loader & multi-versioned
 
 Current Preprocessor System:
 - MC_`<version>`
-   - so `MC_1_19` would mean if 1.19 is the current version
+   - so `MC_1_19_2` would mean if 1.19.2 is the current version
 - POST_MC_`<version>`
-   - so `POST_MC_1_19` would mean if the version is after 1.19
+   - so `POST_MC_1_19_2` would mean if the version is after 1.19.2
 - POST_CURRENT_MC_`<version>`
-   - so `POST_CURRENT_MC_1_19` would mean if the current version is after 1.19 or is 1.19
+   - so `POST_CURRENT_MC_1_19_2` would mean if the current version is after 1.19.2 or is 1.19.2
 - PRE_MC_`<version>`
-   - so `PRE_MC_1_19` would mean if the version is before 1.19
+   - so `PRE_MC_1_19_2` would mean if the version is before 1.19.2
 - PRE_CURRENT_MC_`<version>`
-   - so `PRE_CURRENT_MC_1_19` would mean if the current version is before 1.19 or is 1.19
+   - so `PRE_CURRENT_MC_1_19_2` would mean if the current version is before 1.19.2 or is 1.19.2
 
 Remember to install the [Manifold](https://plugins.jetbrains.com/plugin/10057-manifold) plugin in IntelliJ!\
 Also could look in this [class](https://github.com/Ran-helo/Ranplate/blob/master/common/src/main/java/net/examplemod/ExampleMod.java) if you need an example of how to use it!

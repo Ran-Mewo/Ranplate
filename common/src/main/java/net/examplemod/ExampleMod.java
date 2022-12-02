@@ -48,8 +48,8 @@ public class ExampleMod {
         
         System.out.println(ExampleExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
 
-        #if POST_CURRENT_MC_1_16_5 && MC_1_19
-        System.out.println("Is post 1.16.5 and is 1.19");
+        #if POST_CURRENT_MC_1_16_5 && MC_1_19_2
+        System.out.println("Is post 1.16.5 and is 1.19.2");
         #elif POST_CURRENT_MC_1_16_5
         System.out.println("Is 1.16.5 or post 1.16.5");
         #endif
