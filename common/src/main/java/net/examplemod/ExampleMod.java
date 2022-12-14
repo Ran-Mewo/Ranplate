@@ -5,13 +5,11 @@ import com.google.common.base.Suppliers;
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.CreativeTabRegistry;
 import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.Registries;
 import dev.architectury.registry.registries.RegistrySupplier;
 #else
 import me.shedaniel.architectury.platform.Platform;
 import me.shedaniel.architectury.registry.CreativeTabs;
 import me.shedaniel.architectury.registry.DeferredRegister;
-import me.shedaniel.architectury.registry.Registries;
 import me.shedaniel.architectury.registry.RegistrySupplier;
 #endif
 import net.minecraft.core.Registry;
@@ -20,15 +18,10 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-import java.util.function.Supplier;
-
 public class ExampleMod {
     public static final String MOD_ID = "examplemod";
 
     private static final ResourceLocation EXAMPLE_TAB_RL = new ResourceLocation(MOD_ID, "example_tab");
-
-    // We can use this if we don't want to use DeferredRegister
-    public static final Supplier<Registries> REGISTRIES = Suppliers.memoize(() -> Registries.get(MOD_ID));
 
     // Registering a new creative tab
     #if POST_MC_1_16_5
