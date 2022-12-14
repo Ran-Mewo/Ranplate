@@ -1,44 +1,15 @@
 package net.examplemod;
 
-import com.google.common.base.Suppliers;
 #if POST_MC_1_16_5
 import dev.architectury.platform.Platform;
-import dev.architectury.registry.CreativeTabRegistry;
-import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.RegistrySupplier;
 #else
 import me.shedaniel.architectury.platform.Platform;
-import me.shedaniel.architectury.registry.CreativeTabs;
-import me.shedaniel.architectury.registry.DeferredRegister;
-import me.shedaniel.architectury.registry.RegistrySupplier;
 #endif
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 
 public class ExampleMod {
     public static final String MOD_ID = "examplemod";
-
-    private static final ResourceLocation EXAMPLE_TAB_RL = new ResourceLocation(MOD_ID, "example_tab");
-
-    // Registering a new creative tab
-    #if POST_MC_1_16_5
-    public static final CreativeModeTab EXAMPLE_TAB = CreativeTabRegistry.create(EXAMPLE_TAB_RL, () ->
-            new ItemStack(ExampleMod.EXAMPLE_ITEM.get()));
-    #else
-    public static final CreativeModeTab EXAMPLE_TAB = CreativeTabs.create(EXAMPLE_TAB_RL, () ->
-            new ItemStack(ExampleMod.EXAMPLE_ITEM.get()));
-    #endif
     
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registry.ITEM_REGISTRY);
-    public static final RegistrySupplier<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () ->
-            new Item(new Item.Properties().tab(ExampleMod.EXAMPLE_TAB)));
-    
-    public static void init() {
-        ITEMS.register();
-        
+    public static void init() {        
         System.out.println(ExampleExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
 
         #if POST_CURRENT_MC_1_16_5 && MC_1_19_3
