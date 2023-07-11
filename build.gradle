@@ -10,7 +10,9 @@ plugins {
 def mcVersionToAccessWidenerVersion = [
         "1.16.5": "1_19_3",
         "1.18.2": "1_19_3",
-        "1.19.3":   "1_19_3"
+        "1.19.2": "1_19_2",
+        "1.19.4": "1_19_4",
+        "1.20.1": "1_20_1",
 ]
 rootProject.ext.set("accessWideners", mcVersionToAccessWidenerVersion)
 
